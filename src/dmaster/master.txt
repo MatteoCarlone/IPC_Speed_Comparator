@@ -1,0 +1,22 @@
+################### MASTER PROCESS ###################
+
+The master is the process where the whole program sta-
+rts. It starts the process that the user wants to use.
+The master process it doesn't only open the processes
+but it actually manage the whole user interface by us-
+ing a really simple User Interface, managed with some
+while() loops, some bool variables and with different
+functions. The process reports on the console the PID
+of each process opened, and it closes different file 
+descriptors used in the process for the FIFOs used fo-
+r reporting the time. It can close all the request of
+the User Interface by typing 'quit'. Essentially what 
+it does is:
+1. Asking the amount MBs to send from process to proc-
+   ess.
+2. Asking the modality with which they should be sent.
+   (if the modality chosen is circular buffer it asks
+   how big the user wants the size of the cb)
+3. After the data is sent it asks if the same amount 
+   of MBs is going to be used again.
+

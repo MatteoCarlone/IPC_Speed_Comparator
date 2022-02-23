@@ -1,0 +1,15 @@
+###################### NAMED PIPE PROCESS #######################
+
+In the named pipe process we want to fork in order to
+create two different processes: the producer one and t-
+he consumer one. The process is identical to the unnam-
+ed pipe one with the simple difference that the argume-
+nts passed in the spawn() function in the process cont-
+ain the file descriptor of the named pipe. The data of 
+the time is always passed to the master with two named 
+pipes dedicated to the initial time and to the final 
+time.
+If you want more details about the process just check 
+the comments inside of it.
+
+

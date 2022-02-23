@@ -1,0 +1,13 @@
+##################### UNNAMED PIPE PROCESS ######################
+
+In the unnamed pipe process we want to fork in order to
+create two different processes: the producer one and t-
+he consumer one. In both processes we are going to read
+the file descriptor of the unnamed pipe passed with the
+arguments of the spawn() function in the master proces-
+s. Both the processes write to a the FIFO dedicated to 
+the time calculing the initial time and the final time.
+If you want more details about the process just check 
+the comments inside of it.
+
+

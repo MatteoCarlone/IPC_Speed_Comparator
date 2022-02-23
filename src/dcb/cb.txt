@@ -1,0 +1,19 @@
+################### CIRCULAR BUFFER PROCESS #####################
+
+The circular buffer process starts like the other 3, by
+forking the process and creating a producer and consum-
+er process. Then in the producer and in the consumer, 
+we want to send the data using the semaphores, because
+we want to mantain order in the reading/writing proced-
+ure and we want to protect directly the data (infact t-
+here are two different semaphores, not_full and mutex).
+These procedure is fundamental because we're using a s-
+hared memory between the two processes, big as the cir-
+cular buffer size (decided by the user). After all the 
+data is sent and received, we want to send the data ti-
+me to the master process which will elaborate it and w-
+ill give as output the result. 
+If you want more details about the process just check 
+the comments inside of it.
+
+

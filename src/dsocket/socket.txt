@@ -1,0 +1,19 @@
+######################## SOCKET PROCESS #########################
+
+The socket process is pretty complex due to the comple-
+xity of implementing the socket itself. We can just re-
+sume all the process with a simple description.
+So, as the all other processes except the master we fo-
+rk, in order to get a producer and a consumer process.
+Then we open in both the processes of the socket.c scr-
+ipt the socket. Then, after all the "burocracy" (just a
+word, the implementing part of the socket is really im-
+portant to read but there are comments in the script to
+facilitate the usage of the program) of the sockets, we 
+write in the producer and read on the stream of the so-
+cket. After all, the data regarding the time is sent to
+the master process so it can elaborate them.
+If you want more details about the process just check 
+the comments inside of it.
+
+
